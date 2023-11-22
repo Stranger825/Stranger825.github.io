@@ -27,7 +27,7 @@ html, body, main {
 	padding: 0;
 	color: #fff;
 	background: transparent;
-	font-family: 'Share Tech Mono', monospace;;
+	font-family: 'Titillium Web', sans-serif;
 	font-size: 1rem;
 }
 
@@ -151,7 +151,7 @@ img {
 	filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.4));
 }
 		
-/* #about {
+#about {
 	display: table;
 	overflow: scroll;
 	height: 100%;
@@ -160,30 +160,6 @@ img {
 	font-size: 1.2em;
 	box-shadow: 0 0 3rem rgba(0, 0, 0, 0.8);
 	color: #fff;
-} */
-
-#about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    font-size: 1.5em;
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.8);
-    color: #fff;
-}
-
-#about p {
-    margin-right: 20px; /* Adjust the margin between text and image */
-    max-width: 60%; /* Limit the text width */
-}
-
-#about img {
-    max-width: 26%; /* Adjust the width of the image */
-    border-radius: 60px; /* Optional: Add border radius to the image */
-}
-
-#about a {
-    letter-spacing: 0.5px; /* Adjust the value to your preference */
 }
 
 @media only screen and (min-width : 768px) {
