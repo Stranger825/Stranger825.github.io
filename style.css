@@ -149,6 +149,7 @@ section p {
 img {
 	width: 100%;
 	filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.4));
+	border-radius: 100%;
 }
 		
 #about {
