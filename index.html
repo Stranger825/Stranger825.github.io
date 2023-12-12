@@ -19,11 +19,12 @@
 		<ul id="navigation">
 			<li><a href="#about">About</a></li>
 			<li><a href="#experience">Experience</a></li>
-			<li><a href="#developments">Developments</a></li>
 			<li><a href="#projects">Projects</a></li>
+			<li><a href="#skills&certifications">Skills & Certifications</a></li>
+			<li><a href="#developments">Developments</a></li>
 			<li><a href="data/MuniNitishKumarYaddala_Resume.pdf" target="_blank">CV</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a href="data/MuniNitishKumarYaddala_CV.pdf" target="_blank"></a></li>
+
 		</ul>
 	</nav>
 
@@ -67,11 +68,12 @@
 						<details>
 							<summary>Details</summary>
 							<ul>
-								<li>Identified and reported 20 vulnerabilities across 6 applications and websites
-									using Burp Suite.</li>
-								<li>Suggested effective mitigation measures for all identified vulnerabilities.</li>
-								<li>Acquired proficient knowledge of OWASP Top 10 vulnerabilities through hands-on
-									testing and research, improving the quality of future penetration tests.</li>
+								<li>Identified and reported 20 vulnerabilities in 6 applications using Veracode’s SAST
+									reports and DAST, mainly utilizing BurpSuite.</li>
+								<li>Proposed tailored mitigation strategies for discovered vulnerabilities, leveraging
+									insights from the application team.</li>
+								<li>Gained expertise in OWASP Top 10 vulnerabilities through hands-on testing and
+									research, improving future penetration tests.</li>
 							</ul>
 						</details>
 					</li>
@@ -102,13 +104,12 @@
 						<details>
 							<summary>Details</summary>
 							<ul>
-								<li>Closed 30 unused ports across 20 devices, including FTP and TELNET, reducing the
-									attack surface area by 35% on the subnet and mitigating cyber threats.</li>
-								<li>Monitored 30 network assets with specialized tools to maintain optimal performance
-									and prevent downtime.</li>
-								<li>Enhanced network performance by expertly analyzing traffic to identify choke points
-									and utilizing Wireshark to resolve issues, resulting in a performance increase of up
-									to 20%.</li>
+								<li>Reduced attack surface on the subnetwork by closing 30 unused ports on 20 devices,
+									including FTP and TELNET.</li>
+								<li>Monitored 30 network assets with the custom tool to maintain performance and prevent
+									downtime.</li>
+								<li>Enhanced network performance by analyzing traffic, using Wireshark, to identify
+									choke points.</li>
 							</ul>
 						</details>
 					</li>
@@ -124,205 +125,207 @@
 						<summary>Details</summary>
 						<ul>
 							<li>
-								Emulated 30 key services, including FTP, SSH, HTTP, and others.
+								Developed a lightweight tool emulating 30 services, optimizing resource usage and
+								ensuring user-friendly deployment.
 							</li>
-							<li>Integrated with the Snort IDS to actively detect attacks on emulated services.</li>
-							<li>Attack Detection on HTTP flooding on HTTP service, and brute-force and denial-of-service
-								(DOS) attacks on FTP and SSH services.</li>
-							<li>Actively pushes logs to a designated website for centralized analysis and comprehensive
-								overview of each log entry.</li>
-							<li>Consumes minimal resources (under 20% memory on a 4GB memory machine when idle and
-								around 40% under attack) and is designed for easy deployment by both technical and
-								non-technical users.</li>
+							<li>Enhanced security by integrating with Snort IDS, actively detecting attacks on various
+								services.</li>
+							<li>Actively streamlined logs to a designated website for centralized analysis, ensuring
+								minimal resource consumption.</li>
 						</ul>
 					</details>
-				<li><strong>October 2023: </strong>System Call Hooking and Malicious String Detection</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>
-							Designed and implemented a system call hooking mechanism in the Linux kernel to
-							capture and log the full path of newly created directories.
-						</li>
-						<li>Hooked and unhooked 21 syscalls, capturing and logging their parameters.</li>
-						<li>Automated the process of collecting system call invocations for a target binary
-							using Python.</li>
-						<li>Developed a system call sequence analysis framework for anomaly detection,
-							leveraging Python and system call sequence analysis knowledge.</li>
-						<li>Implemented a maliciousness determination algorithm using Python based on system
-							call sequence analysis.</li>
-					</ul>
-				</details>
-				<li><strong>September 2023: </strong>Binary Exploitation</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>
-							Identified and exploited buffer overflow vulnerabilities in three separate
-							binary programs using techniques such as pattern creation, precise offset
-							calculation, and customized payload construction.
-						</li>
-						<li>Utilized the ’pwn’ package in Python to automate the exploitation process,
-							manage binary processes, and efficiently interact with binaries by providing
-							input strings and capturing the resulting output</li>
-						<li>Analyzed binary code to identify vulnerable functions and exploitable
-							conditions, showcasing a practical understanding of low-level programming
-							concepts.</li>
-						<li>Crafted tailored payloads for each binary program, aligning the payload with
-							specific vulnerabilities and desired outcomes, such as reading flags or
-							executing arbitrary code, showcasing precision in payload design.</li>
-						<li>Applied knowledge of low-level programming concepts and memory management
-							techniques to identify and exploit buffer overflow vulnerabilities, highlighting
-							a comprehensive understanding of the intricacies involved in securing and
-							exploiting binary code.</li>
-					</ul>
-				</details>
-				<li><strong>August 2023: </strong>CMS v2.8 Exploitation: Gaining Shell and Root</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Conducted an intensive Nmap scan, unveiling open ports 22, 80 (leading to
-							directory
-							discovery at /navigate), and 53.</li>
-						<li>Exploited Navigate <a
-								href="https://www.rapid7.com/db/modules/exploit/multi/http/navigate_cms_rce/"
-								target="_blank">CMS v2.8</a>, achieving a shell and www-data user access,
-							followed
-							by privilege escalation attempts.</li>
-						<li>Detected 3 SUID-enabled PHP files, allowing privilege escalation, and used 1 to
-							maintain
-							escalated privileges using <a href="https://gtfobins.github.io/"
-								target="_blank">GTFObins</a>.</li>
-					</ul>
-				</details>
-				<li><strong>June 2023: </strong><a href="https://github.com/Stranger825/webpulse"
-						target="_blank">WebPulse</a>: Accurate Command-Line Web Target Assessment Tool</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Developed and tested a comprehensive web-target probing command line tool,
-							featuring
-							user-friendly functionality, and supporting both HTTP and HTTPS protocols,
-							resulting in
-							a 98% accuracy rate in determining target status.</li>
-						<li>Designed dynamic output formatting that clearly displays the various stages of
-							web-target validity, including visual cues for valid versus invalid targets and
-							alive
-							versus dead targets, resulting in a 40% increase in user comprehension of the
-							outputs
-							compared to previous versions.</li>
-					</ul>
-				</details>
-				<li><strong>October 2021: </strong>Denial-of-Service Simulation: Unveiling Impact and
-					Analyzing
-					Performance</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Executed a simulated DoS attack using <a
-								href="https://www.cloudflare.com/learning/ddos/ddos-attack-tools/high-orbit-ion-cannon-hoic/">HOIC</a>
-							and <a
-								href="https://www.cloudflare.com/learning/ddos/ddos-attack-tools/low-orbit-ion-cannon-loic/">LOIC</a>
-							tools to send TCP and UDP packets,
-							resulting in a 75% reduction in machine performance.</li>
-						<li>Monitored performance fluctuations and captured incoming traffic using
-							Wireshark.</li>
-					</ul>
-				</details>
-				<li><strong>September 2021: </strong>SYN Flooding Attck: Simulation and Analysis</strong>
-				</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Executed a successful SYN flood attack on the target machine, utilizing the
-							synflood
-							module in the <a href="https://www.metasploit.com/" target="_blank">Metasploit
-								Framework</a>, resulting in the reduction of performance of the
-							target machine by 50%.</li>
-						<li>Monitored incoming traffic with Wireshark and analyzed target machine
-							performance and
-							resource consumption with Task Manager, allowing for precise adjustments to the
-							attack
-							strategy for maximum effectiveness.</li>
-						<li>Leveraged Kali Linux and Parrot Security on VirtualBox to efficiently launch and
-							manage
-							the SYN flood attack, resulting in a significant decrease in target machine
-							performance.
-						</li>
-					</ul>
-				</details>
-				<li><strong>August 2021: </strong>Metasploit Mastery: Executing Precision Reverse Shell
-					Attacks</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Executed a reverse shell attack using a payload generated by the <a
-								href="https://www.metasploit.com/" target="_blank">Metasploit Framework</a>
-							on
-							a Windows target machine to gain root access and control, resulting in
-							successful
-							penetration of the system.</li>
-						<li>Leveraged <a href="https://www.metasploit.com/" target="_blank">Metasploit
-								Framework</a>
-							to
-							establish a seamless session between host
-							and target
-							machines, gathering critical information such as hashed passwords, IP
-							configurations,
-							and OS details with 100% accuracy.</li>
-						<li>Utilized Windows, Kali Linux, and VirtualBox to create a secure testing
-							environment for
-							conducting penetration testing.</li>
-					</ul>
-				</details>
-				<li><strong>July 2021: </strong>Advanced Polymorphic Encryption: Evading Anti-Virus
-					Detection</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Developed and implemented advanced polymorphic encryption techniques to evade
-							anti-virus
-							detection, resulting in an evasion rate of about 50% of a virus created using
-							ProRat.
-						</li>
-						<li> Generated a virus using ProRat with high detection rates of 58 out of 67
-							available
-							anti-virus programs at VirusTotal, leveraged in proving the effectiveness of the
-							encryption techniques utilized.
-						</li>
-						<li>Leveraged PolyCrypt to encrypt viruses and decrease detection rates by 35% from
-							initial
-							testing results, successfully avoiding detection by 33 out of 69 available
-							anti-virus
-							programs at VirusTotal.</li>
-					</ul>
-				</details>
-				<li><strong>August 2020 &mdash; September 2020: </strong>Efficient Subnetting and Secure
-					Access:
-					Network Design Project</li>
-				<details>
-					<summary>Details</summary>
-					<ul>
-						<li>Developed a custom network design featuring limited IP addresses and efficient
-							subnetting techniques to avoid IP address wastage.</li>
-						<li>Implemented a comprehensive network security plan, utilizing access control
-							lists and
-							subnetting to restrict unauthorized access and increase efficiency, resulting in
-							a 40%
-							reduction in security breaches.</li>
-						<li>Restricted internet access to the 7th department by using the access control
-							list to
-							block ports 80 and 443.</li>
-					</ul>
-				</details>
+					<li><strong>October 2023: </strong>System Call Hooking and Malicious String Detection</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>
+								Developed a system call hook in the Linux kernel to log new directory paths and
+								systematically captured parameters for 21 syscalls.
+							</li>
+							<li>Automated collection of system call invocations for a target binary in Python,
+								streamlining the analysis process efficiently.</li>
+							<li>Designed a Python system call analysis framework, trained on 100 non-malicious inputs,
+								and validated for maliciousness detection.</li>
+						</ul>
+					</details>
+					<li><strong>September 2023: </strong>Binary Exploitation</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>
+								Discovered and exploited overflow vulnerabilities in three binaries employing reverse
+								engineering techniques like pattern creation,
+								precise offset calculation, and custom payloads.
+							</li>
+							<li>Automated exploitation with Python’s ’pwn’ package, managing binaries, inputs, &
+								capturing outputs for efficient workflows.</li>
+							<li>Analyzed binary code to identify vulnerable functions and exploitable conditions,
+								demonstrating a practical grasp of low-level programming
+								concepts, enhancing overall system security.</li>
+						</ul>
+					</details>
+					<li><strong>August 2023: </strong>CMS v2.8 Exploitation: Gaining Shell and Root</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Conducted an intensive Nmap scan, unveiling open ports 22, 80 (leading to directory
+								discovery at /navigate), and 53.</li>
+							<li>Exploited Navigate <a
+									href="https://www.rapid7.com/db/modules/exploit/multi/http/navigate_cms_rce/">CMS
+									v2.8</a>, achieving a shell and www-data user access, followed by privilege
+								escalation attempts.</li>
+							<li>Detected 3 SUID-enabled PHP files, allowing privilege escalation, and used 1 to maintain
+								escalated privileges using <a href="https://gtfobins.github.io/"
+									target="_blank">GTFObins</a>.</li>
+						</ul>
+					</details>
+					<li><strong>June 2023: </strong><a href="https://github.com/Stranger825/webpulse"
+							target="_blank">WebPulse</a>: Accurate Command-Line Web Target Assessment Tool</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Developed and tested a comprehensive web-target probing command line tool, featuring
+								user-friendly functionality, and supporting
+								both HTTP and HTTPS protocols, resulting in high accuracy rate in determining target
+								status.</li>
+							<li>Designed dynamic output formatting, visually distinguishing target validity and status
+								stages, significantly enhancing user compre-
+								hension compared to previous versions.</li>
+						</ul>
+					</details>
+					<li><strong>October 2021: </strong>Denial-of-Service Simulation: Unveiling Impact and
+						Analyzing
+						Performance</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Executed DoS attack using <a
+									href="https://www.cloudflare.com/learning/ddos/ddos-attack-tools/high-orbit-ion-cannon-hoic/">HOIC</a>
+								and <a
+									href="https://www.cloudflare.com/learning/ddos/ddos-attack-tools/low-orbit-ion-cannon-loic/">LOIC</a>,
+								reducing machine performance by 75% through TCP and UDP packet flooding.</li>
+							<li>Monitored performance fluctuations and captured incoming traffic using
+								Wireshark.</li>
+						</ul>
+					</details>
+					<li><strong>September 2021: </strong>SYN Flooding Attck: Simulation and Analysis</strong>
+					</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Performed successful SYN flood attack, diminishing target machine performance by 50%
+								with <a href="https://www.metasploit.com/" target="_blank">Metasploit’s</a> synflood
+								module.</li>
+							<li>Monitored incoming traffic with Wireshark and analyzed target machine
+								performance and resource consumption with Task Manager, allowing for precise adjustments
+								to the
+								attack strategy for maximum effectiveness.</li>
+							<li>Leveraged Kali Linux and Parrot Security on VirtualBox to efficiently launch and
+								manage the SYN flood attack, resulting in a significant decrease in target machine
+								performance.
+							</li>
+						</ul>
+					</details>
+					<li><strong>August 2021: </strong>Metasploit Mastery: Executing Precision Reverse Shell
+						Attacks</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Executed a reverse shell attack using a payload generated by the <a
+									href="https://www.metasploit.com/" target="_blank">Metasploit Framework</a>
+								on
+								a Windows target machine to gain root access and control, resulting in
+								successful
+								penetration of the system.</li>
+							<li>Leveraged <a href="https://www.metasploit.com/" target="_blank">Metasploit
+									Framework</a>
+								to
+								establish a seamless session between host
+								and target
+								machines, gathering critical information such as hashed passwords, IP
+								configurations,
+								and OS details with 100% accuracy.</li>
+							<li>Utilized Windows, Kali Linux, and VirtualBox to create a secure testing
+								environment for
+								conducting penetration testing.</li>
+						</ul>
+					</details>
+					<li><strong>July 2021: </strong>Advanced Polymorphic Encryption: Evading Anti-Virus
+						Detection</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Developed and implemented advanced polymorphic encryption techniques to evade
+								anti-virus
+								detection, resulting in an evasion rate of about 50% of a virus created using
+								ProRat.
+							</li>
+							<li> Generated a virus using ProRat with high detection rates of 58 out of 67
+								available
+								anti-virus programs at VirusTotal, leveraged in proving the effectiveness of the
+								encryption techniques utilized.
+							</li>
+							<li>Leveraged PolyCrypt to encrypt viruses and decrease detection rates by 35% from
+								initial
+								testing results, successfully avoiding detection by 33 out of 69 available
+								anti-virus
+								programs at VirusTotal.</li>
+						</ul>
+					</details>
+					<li><strong>August 2020 &mdash; September 2020: </strong>Efficient Subnetting and Secure
+						Access:
+						Network Design Project</li>
+					<details>
+						<summary>Details</summary>
+						<ul>
+							<li>Developed a custom network design featuring limited IP addresses and efficient
+								subnetting techniques to avoid IP address wastage.</li>
+							<li>Implemented a network security plan, utilizing access control lists and subnetting to
+								restrict unauthorized access.</li>
+							<li>Restricted internet access to the 7th department by using the access control list to
+								block ports 80 and 443.</li>
+						</ul>
+					</details>
+				</ul>
+			</section>
+
+			<section id="skills&certifications">
+				<h2>Skills and Certifications</h2>
+				<ul>
+					<li>
+						<strong>Languages:</strong> Python | HTML | CSS | JavaScript
+					</li>
+					<li>
+						<strong>Tools:</strong> Burp Suite |Wireshark | Metasploit Framework | Nmap | Netcat | John the
+						Ripper | Nikto |WinPEAS | LinPEAS | sqlmap
+						| Immunity Debugger | DirBuster | ffuf |Responder |PsExec | dnsrecon | hashcat | sublist3r |
+						Mimikatz | Nessus | impacket |
+						BloodHound | VS Code | MS Office 365
+					</li>
+					<li>
+						<strong>Operating Systems:</strong> Kali Linux | Windows | Ubuntu | Parrot Security
+					</li>
+					<li>
+						<strong>Miscellaneous:</strong> Penetration Testing | Web Application Security | Network
+						Security | Vulnerability Assessment | Threat Mitigation
+						| Active Directory | Computer Networking
+					</li>
+					<li>
+						<strong>Certifications:</strong> Certified Network Defender (CND): EC-Council | Certified
+						Network Defender (CND): EC-Council | Certified
+						in Cybersecurity (CC): (ISC)² | OSCP: Offsec (Pursuing)
+					</li>
 				</ul>
 			</section>
 
 			<section id="developments">
 				<h2>Developments</h2>
 				<ul>
+					<li>
+						<strong>December 2023: </strong> Participated in <a href="https://bsidesphilly.org/" target="_blank">BSidesPhilly 2023</a> Cybersecurity Conference.
+					</li>
 					<li><strong>June 2023: </strong> Led a comeback in <a href="https://ctftime.org/event/2023/"
-							target="_blank">NAHCOMM CTF</a>.</li>
+							target="_blank">NahamCon CTF</a>.</li>
 					<li><strong>May 2023: </strong> Developed WebPulse, a Python-based web probing tool.
 					</li>
 					<li><strong class="accept">February 2023: </strong> Discovered IDOR bug in a state government
@@ -351,7 +354,7 @@
 
 			<section id="contact">
 				<h2>Contact</h2>
-				<p> You can also schedule a 1-on-1 meeting with me using the following <a
+				<p>You can also schedule a 1-on-1 meeting with me using the following <a
 						href="https://calendly.com/nitish-yaddala" target="_blank" rel="noopener noreferrer">link</a>.
 				</p>
 				<p><span class="fas fa-envelope"></span>: <a href="mailto:nitish.yaddala@gmail.com"
@@ -359,13 +362,14 @@
 				<p><span class="fab fa-linkedin-in"></span>: <a href="https://www.linkedin.com/in/nitish-yaddala/"
 						target="_blank">in/nitish-yaddala/</a></p>
 				<p><span class="fab fa-github"></span>: <a href="https://github.com/Stranger825"
-						target="_blank">Stranger825</a></p>
+						target="_blank">Stranger825</a>
+				</p>
 				<p><span class="fas fa-phone"></span>: <a href="tel:+14044514193" target="_blank">+1 (404) 451-4193</a>
 				</p>
-
 			</section>
+
 		</div>
-		<h5> Updated: November 2023 ;&emsp;Thanks to <a href="https://minimalblue.com" target="_blank"
+		<h5> Updated: December 2023 ;&emsp;Thanks to <a href="https://minimalblue.com" target="_blank"
 				rel="noopener noreferrer">&copy;Marco Squarcina</a> for the website template.</h5>
 	</main>
 </body>
